@@ -6,11 +6,11 @@
 //  Copyright © 2017年 xiaoku. All rights reserved
 //
 
-#import "BaseController.h"
+#import <UIKit/UIKit.h>
 #import <Masonry.h>
 #import <MJRefresh.h>
 
-@interface BaseTableViewController : BaseController <UITableViewDataSource, UITableViewDelegate>
+@interface BaseTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 

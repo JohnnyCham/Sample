@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [btn setImage:[UIImage imageNamed:@"tu"] forState:UIControlStateNormal];
+    btn.adjustsImageWhenHighlighted = NO;
+    btn.layer.cornerRadius = 50;
+    btn.layer.masksToBounds = YES;
+    [self.view addSubview:btn];
 }
 
 - (void)touch {
